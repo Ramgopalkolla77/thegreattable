@@ -1,0 +1,140 @@
+<div class="main-container">
+  <div class="main-side-bar">
+    <div class="side-content">
+      <p class="side-icons"></p>
+    </div>
+  </div>
+  <!----------------------- MIDDLE PAGE CONTENT --------------------------->
+  <div class="middle-page-content">
+    <div class="main-header">
+      <div class="header-content">
+        <h4>The Great Table</h4>
+        <select class="header-sub-content">
+          <option selected value="Today">Today</option>
+        </select>
+      </div>
+      <div class="search-bar-content">
+        <input matInput type="text" class="mat-input" />
+        <span class="side-icons" placeholder="Search.."> Search </span>
+      </div>
+    </div>
+
+
+    <div class="main-details-content">
+       <div class="left-content">
+        <div class="left-header">
+          <div class="left-header-content">Table</div>
+          <div class="left-header-name">k.Chandra</div>
+        </div>
+        <br />
+        <div class="main-details">
+          <div class="main-details-cards">
+            <mat-button-toggle-group class="flexWrap" name="fontStyle" aria-label="Font Style">
+              <mat-button-toggle class="flexCol" *ngFor="let category of categories" (click)="filterCategory(category)">{{category}}</mat-button-toggle>
+          </mat-button-toggle-group>
+          </div>
+
+
+
+
+      <div class="all-items-details-cards">
+        <mat-form-field appearance="fill">
+          <mat-label>Select Items</mat-label>
+          <mat-select>
+            <mat-option [value]="subCat" *ngFor="let subCat of subCategory" (click)="filterSubCategory(subCat)">{{subCat}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+
+      <div class="bottom-card-all-details">
+        <div class="bottom-card-details">
+          <mat-card class="product-details-card" *ngFor="let food of listOfFoods">
+            <div class="images-card">
+              <img src="{{ food.img }}" class="image-resize" />
+            </div>
+
+            <div class="all-complete-details-card">
+              <div>
+                <div class="name">{{ food.Name }}</div>
+                <div class="price">{{ food.Price }}</div>
+              </div>
+              <br /><br />
+              <div class="button-card">
+                <button mat-button (click)='checkQuantityPlus(food)'>+</button>
+                <button mat-button>{{food.Quantity}}</button>
+                <button mat-button (click)='checkQuantityMinus(food)'>-</button>
+              </div>
+            </div>
+          </mat-card>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      <div class="check-content">
+        <div class="checkout-body-content">
+          <div class="checkout-heading">
+            Check Out
+          </div>
+
+          <div class="main-body-right-body-main-card">
+
+            <mat-card *ngFor="let type of categories">               
+                       <!-- class="checkout-content-cards" -->
+
+
+              <div class="checkout-all-details-card">
+                <div>{{type}}</div>
+                <div>total:- ${{type == 'Drinks' ? drinksTotal : (type == 'Food' ? foodTotal : desertsTotal)}}</div>
+              </div>
+
+              <div *ngIf="shoppingCart[type].length">
+                <div class="flexWrapRow" *ngFor="let item of shoppingCart[type]">
+                        <div class="flexCol">{{item.Name}}</div>
+                        <div class="flexCol">${{item.Price}} x {{item.Quantity}}</div>
+                        <div class="flexCol">${{item.Price * item.Quantity}}</div>
+                </div>
+            </div>
+          </mat-card>
+
+
+
+
+            <mat-card >
+              <div class="checkout-all-details-card">
+                  <div>Sub Total </div>
+                  <div>${{(drinksTotal+foodTotal+desertsTotal).toFixed(2)}} </div>
+              </div>
+              <div class="checkout-all-details-card">
+                  <div>Estimated Taxes </div>
+                  <div>${{((drinksTotal+foodTotal+desertsTotal)*0.18).toFixed(2)}}</div>
+              </div>
+              <div class="checkout-all-details-card">
+                  <div>Discount </div>
+                  <div>${{((drinksTotal+foodTotal+desertsTotal)*1.18*0.1).toFixed(2)}}</div>
+              </div>
+          </mat-card>
+      </div>
+            <div>
+            <button mat-button class="payment">{{drinksTotal+foodTotal+desertsTotal == 0 ? 'Pay Now' : 'Pay ' + (((drinksTotal+foodTotal+desertsTotal)*1.18) - ((drinksTotal+foodTotal+desertsTotal)*1.18*0.1)).toFixed(2)}}</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>  

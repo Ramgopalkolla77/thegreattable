@@ -1,0 +1,136 @@
+{
+    "Drinks":[
+        {
+            "Name" :"Blanic",
+            "Catergory": "Wine",
+            "Price": 30,
+            "img":"../../../assets/wineImages/blanic.jpg",
+            "type": "Drinks",
+            "Quantity": 0
+        },
+        {
+            "Name" :"Glenfinch",
+            "Catergory": "Wine",
+            "Price": 250,
+            "img":"../../assets/wineImages/glenfinch.jpg",
+            "type": "Drinks",
+            "Quantity": 0
+        },
+        {
+            "Name" :"Grand Brassa",
+            "Catergory": "Wine",
+            "Price": 250,
+            "img":"../../../assets/wineImages/grand-brassa.jpg",
+            "type": "Drinks",
+            "Quantity": 0
+        },
+        {
+            "Name" :"Jacobs Creek",
+            "Catergory": "Wine",
+            "Price": 250,
+            "img":"../../../assets/wineImages/jacobs-creek.jpg",
+            "type": "Drinks",
+            "Quantity": 0
+        },
+        {
+            "Name" :"Mendad",
+            "Catergory": "Wine",
+            "Price": 250,
+            "img":"../../assets/wineImages/menad.jpg",
+            "type": "Drinks",
+            "Quantity": 0
+        },
+        {
+            "Name" :"Nobilo",
+            "Catergory": "Wine",
+            "Price": 45,
+            "img":"../../../assets/wineImages/nobilo.jpg",
+            "type": "Drinks",
+            "Quantity": 0
+        },
+        {
+            "Name" :"Beer1",
+            "Catergory": "Beer",
+            "Price": 30,
+            "img":"../../../assets/wineImages/blanic.jpg",
+            "type": "Drinks",
+            "Quantity": 0
+        },
+        {
+            "Name" :"Beer2",
+            "Catergory": "Beer",
+            "Price": 30,
+            "img":"../../assets/wineImages/pradnyal-gandhi-1MqDCpA-2hU-unsplash.jpg",
+            "type": "Drinks",
+            "Quantity": 0
+        }
+    ],
+    "Food": [
+        {
+            "Name" :"noodles",
+            "Catergory": "Chineese",
+            "Price": 30,
+            "img":"../../assets/food/noodles.jpg",
+            "type": "Food",
+            "Quantity": 0
+        },
+        {
+            "Name" :"burger",
+            "Catergory": "American",
+            "Price": 30,
+            "img":"../../assets/food/burgers.jpg",
+            "type": "Food",
+            "Quantity": 0
+        },
+        {
+            "Name" :"chicken",
+            "Catergory": "Indian",
+            "Price": 30,
+            "img":"../../assets/food/chicken.jpg",
+            "type": "Food",
+            "Quantity": 0
+        },
+        {
+            "Name" :"salad",
+            "Catergory": "mexican",
+            "Price": 30,
+            "img":"../../assets/food/salad.jpg",
+            "type": "Food",
+            "Quantity": 0
+        }
+    ],
+    "Deserts" :[
+        {
+            "Name" :"mango",
+            "Catergory": "Ice Creams",
+            "Price": 30,
+            "img":"../../assets/data/desserts/rachael-gorjestani-HLt6jQLf_J0-unsplash.jpg",
+            "type": "Deserts",
+            "Quantity": 0
+        },
+        {
+            "Name" :"vanilla",
+            "Catergory": "Ice Creams",
+            "Price": 30,
+            "img":"../../assets/data/desserts/ian-dooley-TLD6iCOlyb0-unsplash.jpg",
+            "type": "Deserts",
+            "Quantity": 0
+        },
+        {
+            "Name" :"pepsi",
+            "Catergory": "Cool Drinks",
+            "Price": 30,
+            "img":"../../assets/data/desserts/cooldrink2.jpg",
+            "type": "Deserts",
+            "Quantity": 0
+        },
+        {
+            "Name" :"kiwi shake",
+            "Catergory": "Cool Drinks",
+            "Price": 30,
+             "img":"../../assets/data/desserts/cooldrink.jpg",
+             "type": "Deserts",
+            "Quantity": 0
+        }
+    ]
+}
