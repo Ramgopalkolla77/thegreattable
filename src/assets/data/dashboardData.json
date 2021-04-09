@@ -47,54 +47,62 @@
             "img":"../../../assets/wineImages/nobilo.jpg",
             "type": "Drinks",
             "Quantity": 0
-        },
-        {
-            "Name" :"Beer1",
-            "Catergory": "Beer",
-            "Price": 30,
-            "img":"../../../assets/wineImages/blanic.jpg",
-            "type": "Drinks",
-            "Quantity": 0
-        },
-        {
-            "Name" :"Beer2",
-            "Catergory": "Beer",
-            "Price": 30,
-            "img":"../../assets/wineImages/pradnyal-gandhi-1MqDCpA-2hU-unsplash.jpg",
-            "type": "Drinks",
-            "Quantity": 0
         }
     ],
     "Food": [
         {
-            "Name" :"noodles",
+            "Name" :"Noodles",
             "Catergory": "Chineese",
-            "Price": 30,
+            "Price": 15,
             "img":"../../assets/food/noodles.jpg",
+            "type": "Food",
+            "Quantity": 0
+        },
+        {
+            "Name" :"Cheese plate",
+            "Catergory": "Chineese",
+            "Price": 25,
+            "img":"../../assets/food/charles-deluvio-d2B90dLCNy4-unsplash.jpg",
             "type": "Food",
             "Quantity": 0
         },
         {
             "Name" :"burger",
             "Catergory": "American",
-            "Price": 30,
-            "img":"../../assets/food/burgers.jpg",
+            "Price": 20,
+            "img":"../../assets/food/louis-hansel-shotsoflouis-ME04T9H7hYw-unsplash.jpg",
             "type": "Food",
             "Quantity": 0
         },
         {
-            "Name" :"chicken",
+            "Name" :"Pan cakes",
+            "Catergory": "American",
+            "Price": 30,
+            "img":"../../assets/food/sam-moqadam-QhlCgRucrbA-unsplash.jpg",
+            "type": "Food",
+            "Quantity": 0
+        },
+        {
+            "Name" :"Biriyani",
             "Catergory": "Indian",
             "Price": 30,
-            "img":"../../assets/food/chicken.jpg",
+            "img":"../../assets/food/pexels-rajesh-tp-1624487.jpg",
             "type": "Food",
             "Quantity": 0
         },
         {
-            "Name" :"salad",
-            "Catergory": "mexican",
+            "Name" :"Panner Butter Masala",
+            "Catergory": "Indian",
+            "Price": 20,
+            "img":"../../assets/food/pexels-shantanu-pal-2679501.jpg",
+            "type": "Food",
+            "Quantity": 0
+        },
+        {
+            "Name" :"Salad",
+            "Catergory": "italian",
             "Price": 30,
-            "img":"../../assets/food/salad.jpg",
+            "img":"../assets/food/monika-grabkowska-pCxJvSeSB5A-unsplash.jpg",
             "type": "Food",
             "Quantity": 0
         }
@@ -117,18 +125,18 @@
             "Quantity": 0
         },
         {
-            "Name" :"pepsi",
-            "Catergory": "Cool Drinks",
+            "Name" :"Pan Cake Cups",
+            "Catergory": "Cakes",
             "Price": 30,
-            "img":"../../assets/data/desserts/cooldrink2.jpg",
+            "img":"../../assets/food/angel-varela-NRnVlHV9RCE-unsplash.jpg",
             "type": "Deserts",
             "Quantity": 0
         },
         {
-            "Name" :"kiwi shake",
-            "Catergory": "Cool Drinks",
+            "Name" :"Chocolate Cake",
+            "Catergory": "Cakes",
             "Price": 30,
-             "img":"../../assets/data/desserts/cooldrink.jpg",
+             "img":"../../assets/food/abhishek-hajare-TIctev58ij8-unsplash.jpg",
              "type": "Deserts",
             "Quantity": 0
         }

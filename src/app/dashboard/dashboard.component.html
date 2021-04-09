@@ -13,10 +13,10 @@
           <option selected value="Today">Today</option>
         </select>
       </div>
-      <div class="search-bar-content">
+      <!-- <div class="search-bar-content">
         <input matInput type="text" class="mat-input" />
         <span class="side-icons" placeholder="Search.."> Search </span>
-      </div>
+      </div> -->
     </div>
 
 
@@ -93,11 +93,7 @@
           </div>
 
           <div class="main-body-right-body-main-card">
-
-            <mat-card *ngFor="let type of categories">               
-                       <!-- class="checkout-content-cards" -->
-
-
+            <mat-card class="my-class-name" *ngFor="let type of categories">              
               <div class="checkout-all-details-card">
                 <div>{{type}}</div>
                 <div>total:- ${{type == 'Drinks' ? drinksTotal : (type == 'Food' ? foodTotal : desertsTotal)}}</div>
@@ -113,9 +109,7 @@
           </mat-card>
 
 
-
-
-            <mat-card >
+             <mat-card >
               <div class="checkout-all-details-card">
                   <div>Sub Total </div>
                   <div>${{(drinksTotal+foodTotal+desertsTotal).toFixed(2)}} </div>

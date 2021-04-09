@@ -13,3 +13,12 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     /* align-items: center; */
     justify-content: center;
 }
+
+
+.main-body-right-body-main-card {
+    margin-bottom: 20px;
+}
+
+.this-button-component {
+    width: 50% !important;
+}

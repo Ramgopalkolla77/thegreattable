@@ -52,20 +52,20 @@ export class DashboardComponent implements OnInit {
     this.listOfFoods = [];
     Object.keys(this.data).forEach((value) => {
       this.data[value].forEach((food) => {
-        if (food.Catergory == subCat) this.listOfFoods.push(food);
+        if (food.Catergory === subCat) { this.listOfFoods.push(food); }
       });
     });
   }
 
   checkQuantityPlus(x) {
     x.Quantity++;
-    if (this.shoppingCart[x.type].length == 0) {
+    if (this.shoppingCart[x.type].length === 0) {
       this.shoppingCart[x.type].push(x);
     } else {
       let foundIndex = this.shoppingCart[x.type].findIndex(
-        (e) => e.Name == x.Name
+        (e) => e.Name === x.Name
       );
-      if (foundIndex == -1) {
+      if (foundIndex === -1) {
         this.shoppingCart[x.type].push(x);
       } else {
         this.shoppingCart[x.type][foundIndex].Quantity = x.Quantity;
@@ -73,13 +73,16 @@ export class DashboardComponent implements OnInit {
     }
 
     this.shoppingCart[x.type].forEach((element) => {
-      if (x.Name == element.Name) {
-        if (x.type == 'Drinks')
+      if (x.Name === element.Name) {
+        if (x.type === 'Drinks') {
           this.drinksTotal += element.Price;
-        else if (x.type == 'Food')
+        }
+        else if (x.type === 'Food') {
           this.foodTotal += element.Price;
-        else if (x.type == 'Deserts')
+ }
+        else if (x.type === 'Deserts') {
           this.desertsTotal += element.Price;
+ }
       }
     });
   }
@@ -88,10 +91,10 @@ export class DashboardComponent implements OnInit {
       y.Quantity--;
       if (this.shoppingCart[y.type].length !== 0) {
         let foundIndex = this.shoppingCart[y.type].findIndex(
-          (e) => e.Name == y.Name
+          (e) => e.Name === y.Name
         );
         if (foundIndex !== -1) {
-          if (y.Quantity == 0) {
+          if (y.Quantity === 0) {
             this.shoppingCart[y.type].splice(foundIndex, 1);
           } else {
             this.shoppingCart[y.type][foundIndex].Quantity = y.Quantity;
